@@ -1,0 +1,48 @@
+@import 'normalize.css';
+@import 'variables.scss';
+@import 'helpers.scss';
+
+.big-huge-massive-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.main-nav {
+  border: 1px solid black;
+}
+
+.main-nav__nav-item {
+  border: 1px solid orange;
+  display: inline-block;
+}
+
+.logo {
+  width: 10px;
+}
+
+.main-content {
+  border: 1px blue solid;
+}
+
+.grid img {
+  border: 1px solid gold;
+  width: 24.25%;
+}
+
+.main-content__item--edge {
+  overflow: hidden;
+  width: 20;
+}
+
+.giant-fighter {
+  width: 100%;
+  border: 1px pink solid;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.main-content__item {
+  border: solid 1px green;
+  display: inline-block;
+}
