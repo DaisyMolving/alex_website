@@ -1,3 +1,7 @@
-.half-width {
-  width: 50%;
+.full-to-half {
+  width: 100%;
+
+  @media(min-width: 920px) {
+    width: 50%;
+  }
 }

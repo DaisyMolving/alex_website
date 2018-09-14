@@ -3,6 +3,17 @@
 @import 'helpers.scss';
 @import 'grid.scss';
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+p, a {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  box-sizing: border-box;
+}
 
 .big-huge-massive-container {
   max-width: 1400px;
@@ -26,20 +37,28 @@
   border: 1px blue solid;
 }
 
-.quarter-width {
-  border: 1px solid gold;
-  width: 24.25%;
+.versus {
+  display: none;
+
+  @media(min-width: 920px) {
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+  }
 }
 
-.versus {
-  display: block;
-  margin: 0 auto;
-  width: 15%;
+.main-content__item--grid {
+  display: inline-block;
 }
 
 .main-content__item--edge {
-  overflow: hidden;
-  width: 20;
+  display: none;
+
+  @media(min-width: 920px) {
+    display: inline-block;
+    overflow: hidden;
+    width: 20%;
+  }
 }
 
 .giant-fighter {
@@ -47,12 +66,27 @@
   border: 1px pink solid;
 }
 
-.grid {
+.image-grid {
   margin: 0 auto;
+  padding: 2em 2em 0em 2em;
+}
+
+.image-grid img {
+  width: 100%;
+  border: 1px solid gold;
+
+  @media(min-width: 500px) {
+    width: 49%;
+  }
+  @media(min-width: 700px) {
+    width: 32%;
+  }
+  @media(min-width: 920px) {
+    width: 24%;
+  }
 }
 
 .main-content__item {
   border: solid 1px green;
-  display: inline-block;
   vertical-align: top;
 }
